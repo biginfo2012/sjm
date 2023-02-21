@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>あなたのお店の現状は？自己チェックしてみましょう</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+  <div id="mainbox">
+      <div id="headerbox">
+            <h1>あなたのお店の現状は？自己チェックしてみましょう</h1>
+      </div>
+      <div id="header_menu">
+      </div>
+      <div class="clear"></div>
+
+      <div id="shindan_setsumei">
+          「お客様が通いたくなる店」チェックリスト
+          <div class="shin" id="dian1">
+              1点・・・全く出来ていない
+          </div>
+          <div class="shin" id="dian2">
+              2点・・・ほとんど出来ていない
+          </div>
+          <div class="shin" id="dian3">
+              3点・・・どちらともいえない
+          </div>
+          <div class="shin" id="dian4">
+              4点・・・まあまあ出来ている
+          </div>
+          <div class="shin" id="dian5">
+              5点・・・かなり良く出来ている
+          </div>
+      </div>
+      <div id="missed"></div>
+    <!--<form action="chart.html" method="get">-->
+      <table id="setsumonbox">
+        <thead>
+        <tr class="color">
+            <td></td>
+            <td></td>
+            <td class="marker">1点</td>
+            <td class="marker">2点</td>
+            <td class="marker">3点</td>
+            <td class="marker">4点</td>
+            <td class="marker">5点</td>
+        </tr>
+        </thead>
+        <tr class="color">
+            <td rowspan="5" align="center" class="sonota">店舗力</td>
+                <td class="sonota">1.この店は、どんな店にしたい、というコンセプトが明確である</td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A01" id="A01_1" value="1">
+                    </td>
+                    <td nowrap="" class="yes2" align="center">
+                        <input type="radio" name="A01" id="A01_2" value="2">
+                    </td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A01" id="A01_3" value="3">
+                    </td>
+                    <td nowrap="" class="yes2" align="center">
+                        <input type="radio" name="A01" id="A01_4" value="4">
+                    </td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A01" id="A01_5" value="5">
+                    </td>
+
+            </tr>
+            <tr class="color">
+                <td class="sonota">2.これだけはほかの店に負けない、という強みがある</td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A02" id="A02_1" value="1">
+                    </td>
+                    <td nowrap="" class="yes2" align="center">
+                        <input type="radio" name="A02" id="A02_2" value="2">
+                    </td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A02" id="A02_3" value="3">
+                    </td>
+                    <td nowrap="" class="yes2" align="center">
+                        <input type="radio" name="A02" id="A02_4" value="4">
+                    </td>
+                    <td nowrap="" class="no2" align="center">
+                        <input type="radio" name="A02" id="A02_5" value="5">
+                    </td>
+        </tr>
+        <tr class="color">
+            <td class="sonota">3.店のよさ、強みをお客様は感じている、伝わっている</td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A03" id="A03_1" value="1">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A03" id="A03_2" value="2">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A03" id="A03_3" value="3">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A03" id="A03_4" value="4">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A03" id="A03_5" value="5">
+                </td>
+        </tr>
+        <tr class="color">
+            <td class="sonota">4.スタッフ全員で、お客様を楽しませる計画、工夫を話し合っている</td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A04" id="A04_1" value="1">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A04" id="A04_2" value="2">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A04" id="A04_3" value="3">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A04" id="A04_4" value="4">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A04" id="A04_5" value="5">
+                </td>
+        </tr>
+        <tr class="color">
+            <td class="sonota">5.客観的にみて、「また来たくなる」「通いたくなる店」だと思う</td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A05" id="A05_1" value="1">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A05" id="A05_2" value="2">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A05" id="A05_3" value="3">
+                </td>
+                <td nowrap="" class="yes2" align="center">
+                    <input type="radio" name="A05" id="A05_4" value="4">
+                </td>
+                <td nowrap="" class="no2" align="center">
+                    <input type="radio" name="A05" id="A05_5" value="5">
+                </td>
+        </tr>
+          <tr class="color">
+              <td rowspan="5" align="center" class="sonota">人財力</td>
+              <td class="sonota">1.お店のコンセプトをスタッフ全員が共有し、口で言える</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B01" id="B01_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B01" id="B01_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B01" id="B01_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B01" id="B01_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B01" id="B01_5" value="5">
+              </td>
+
+          </tr>
+          <tr class="color">
+              <td class="sonota">2.スタッフ全員、会社の良さが語れる</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B02" id="B02_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B02" id="B02_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B02" id="B02_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B02" id="B02_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B02" id="B02_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">3.スタッフは全員、店の良さが語れる</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B03" id="B03_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B03" id="B03_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B03" id="B03_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B03" id="B03_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B03" id="B03_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">4.スタッフは全員、店内の商品の良さが語れる</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B04" id="B04_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B04" id="B04_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B04" id="B04_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B04" id="B04_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B04" id="B04_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">5.お客様からの紹介、クチコミ率が高い</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B05" id="B05_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B05" id="B05_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B05" id="B05_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="B05" id="B05_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="B05" id="B05_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td rowspan="5" align="center" class="sonota">表現力</td>
+              <td class="sonota">1.店内全体で、明るく挨拶、声かけ、元気にお客様を迎える空気がある</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C01" id="C01_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C01" id="C01_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C01" id="C01_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C01" id="C01_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C01" id="C01_5" value="5">
+              </td>
+
+          </tr>
+          <tr class="color">
+              <td class="sonota">2.お客様が店内で飽きない季節装飾、演出、POPの工夫がされている。</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C02" id="C02_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C02" id="C02_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C02" id="C02_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C02" id="C02_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C02" id="C02_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">3.店内、HPなどにお客様の声やスタッフの様子や楽しさが載っている</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C03" id="C03_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C03" id="C03_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C03" id="C03_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C03" id="C03_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C03" id="C03_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">4.一言で、『わたしたちのお店はこんなお店」とキャッチフレーズがある</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C04" id="C04_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C04" id="C04_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C04" id="C04_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C04" id="C04_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C04" id="C04_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">5.店内は、全体の色、カラーコーディネートを意識し、変化させている</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C05" id="C05_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C05" id="C05_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C05" id="C05_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="C05" id="C05_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="C05" id="C05_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td rowspan="5" align="center" class="sonota">発信力</td>
+              <td class="sonota">1.お客様に定期的に情報を送っている（LINE@、会報誌、メールマガジン、季節のハガキなど)</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D01" id="D01_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D01" id="D01_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D01" id="D01_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D01" id="D01_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D01" id="D01_5" value="5">
+              </td>
+
+          </tr>
+          <tr class="color">
+              <td class="sonota">2.お客様とその家族、友達が参加できるイベント、座談会、パーティなどを定期的にしている</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D02" id="D02_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D02" id="D02_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D02" id="D02_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D02" id="D02_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D02" id="D02_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">3.上記のイベントは先々までカレンダーになって配布、掲示されている</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D03" id="D03_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D03" id="D03_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D03" id="D03_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D03" id="D03_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D03" id="D03_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">4.上記のイベントを自分たちでチラシ配布、ポスティング、地域の店や場所にチラシ設置、来店者に手渡しなど定期的に販促活動している</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D04" id="D04_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D04" id="D04_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D04" id="D04_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D04" id="D04_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D04" id="D04_5" value="5">
+              </td>
+          </tr>
+          <tr class="color">
+              <td class="sonota">5.お客様名簿には誕生日、家族構成、家族の車など情報を更新している</td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D05" id="D05_1" value="1">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D05" id="D05_2" value="2">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D05" id="D05_3" value="3">
+              </td>
+              <td nowrap="" class="yes2" align="center">
+                  <input type="radio" name="D05" id="D05_4" value="4">
+              </td>
+              <td nowrap="" class="no2" align="center">
+                  <input type="radio" name="D05" id="D05_5" value="5">
+              </td>
+          </tr>
+      </table>
+
+        <script>
+            function check_radios() {
+                var radio_name = "<div style=\"width:520px; padding:18px; border:solid #FF9999 1px; color:#FF0000; background-color:#ffeeee; margin:24px 12px 0px 6px; font-size:12px; line-height:150%;\">" +
+                    "下記質問が選択されていませんでした。<br>" +
+                    "選択をして「診断する」ボタンをクリックしてください。<br><br>";
+                var missing=0;
+                var A=0, B=0, C=0, D=0;
+
+                var value = $("input[name = A01]:checked").val();
+                A+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "店舗力01, ";
+                    missing++;
+                }
+                value = $("input[name = A02]:checked").val();
+                A+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "店舗力02, ";
+                    missing++;
+                }
+                value = $("input[name = A03]:checked").val();
+                A+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "店舗力03, ";
+                    missing++;
+                }
+                value = $("input[name = A04]:checked").val();
+                A+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "店舗力04, ";
+                    missing++;
+                }
+                value = $("input[name = A05]:checked").val();
+                A+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "店舗力05, ";
+                    missing++;
+                }
+                value = $("input[name = B01]:checked").val();
+                B+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "人財力01, ";
+                    missing++;
+                }
+                value = $("input[name = B02]:checked").val()
+                B+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "人財力02, ";
+                    missing++;
+                }
+                value = $("input[name = B03]:checked").val();
+                B+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "人財力03, ";
+                    missing++;
+                }
+                value = $("input[name = B04]:checked").val();
+                B+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "人財力04, ";
+                    missing++;
+                }
+                value = $("input[name = B05]:checked").val();
+                B+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "人財力05, ";
+                    missing++;
+                }
+                value = $("input[name = C01]:checked").val();
+                C+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "表現力01, ";
+                    missing++;
+                }
+                value = $("input[name = C02]:checked").val();
+                C+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "表現力02, ";
+                    missing++;
+                }
+                value = $("input[name = C03]:checked").val()
+                C+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "表現力03, ";
+                    missing++;
+                }
+                value = $("input[name = C04]:checked").val();
+                C+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "表現力04, ";
+                    missing++;
+                }
+                value = $("input[name = C05]:checked").val();
+                C+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "表現力05, ";
+                    missing++;
+                }
+                value = $("input[name = D01]:checked").val();
+                D+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "発信力01, ";
+                    missing++;
+                }
+                value = $("input[name = D02]:checked").val();
+                D+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "発信力02, ";
+                    missing++;
+                }
+                value = $("input[name = D03]:checked").val();
+                D+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "発信力03, ";
+                    missing++;
+                }
+                value = $("input[name = D04]:checked").val();
+                D+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "発信力04, ";
+                    missing++;
+                }
+                value = $("input[name = D05]:checked").val();
+                D+=Number(value);
+                if (value != 1 & value != 2 & value != 3 & value != 4 & value != 5) {
+                    radio_name += "発信力05, ";
+                    missing++;
+                }
+                radio_name += "!</div>";
+                if (missing == 0) {
+                    radio_name = "";
+                    document.getElementById("missed").innerHTML = radio_name;
+                    chart_display(A,B,C,D);
+                }
+                else {
+                    radio_name=radio_name.replace(', !','');
+                    document.getElementById("missed").innerHTML = radio_name;
+                    window.location.hash="missed";
+                    window.location.hash='';
+                }
+            }
+        </script>
+      <div>
+          <div id="soushin">
+              <input type="button" name="button"  class="button" onclick="check_radios()">
+          </div>
+          <canvas id="myChart"></canvas>
+          <div id="soushin1">
+              <div id="format_button"></div>
+          </div>
+          <script>
+              var A=0, B=0, C=0, D=0;
+              function chart_display(A, B, C, D) {
+                  var ctx = document.getElementById("myChart");
+                  var myChart = new Chart(ctx, {
+                      type: 'radar',
+                      data: {
+                          labels: ['店舗力', '人財力', '表現力', '発信力'],
+                          datasets: [{
+                              label: '診断結果',
+                              data: [A, B, C, D],
+                              fill: true,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor:'rgb(255, 99, 132)',
+                              pointBackgroundColor:'rgb(255, 99, 132)',
+                              pointBorderColor:'#fff',
+                              pointHoverBackgroundColor:'#fff',
+                              pointHoverBorderColor:'rgb(255, 99, 132)',
+                          }]
+                      },
+                      options: {
+                          scale: {
+                              ticks: {
+                                  beginAtZero: true,
+                                  stepSize: 5,
+                                  suggestedMax: 25,
+                                  suggestedMin: 0,
+
+                              }
+                          }
+                      }
+                  })
+                  var format = "<button onclick='format_radio()'>再診断</button>";
+                  document.getElementById('format_button').innerHTML = format;
+              }
+              function format_radio() {
+                  window.location.reload(true);
+                  window.location.hash="mainbox";
+                  window.location.hash="";
+              }
+          </script>
+      </div>
+    <!--</form>-->
+      <div id="footer">Copyright (C) 2008-2014 Herstory Co.,Ltd. All rights reserved.
+      </div>
+</div>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+      document.getElementById('setsumonbox').style.color='darkred';
+      document.getElementById('shindan_setsumei').style.color='darkred';
+      document.getElementById('dian1').style.color='darkred';
+      document.getElementById('dian2').style.color='darkred';
+      document.getElementById('dian3').style.color='darkred';
+      document.getElementById('dian4').style.color='darkred';
+      document.getElementById('dian5').style.color='darkred';
+    </script>
+
+</body>
+</html>

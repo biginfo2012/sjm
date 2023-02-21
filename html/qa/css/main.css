@@ -1,0 +1,327 @@
+@charset "Shift_JIS";
+/* main styles
+----------------------------------------------*/
+
+
+
+body {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-size: 25px;
+    font-style: initial;
+    color: #E43700;
+    margin: 0px;
+    float: left;
+    /*width: 202px;*/
+    padding: 8px 0px 0px 25px;
+}
+h2 {
+    padding: 0px;
+    background-image: url(../img/ph_midashiback.gif);
+    background-repeat: repeat-x;
+    background-position: left center;
+    margin: 40px 0px 0px;
+}
+form {
+    margin: 0px;
+    padding: 0px;
+}
+.clear {
+    clear: left;
+}
+#mainbox {
+    width: 700px;
+    margin: 0px auto 10px;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#headerbox {
+    background-image: url(../img/ph_headerback.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 2px solid #F3EAC5;
+    height: 47px;
+}
+#header_menu {
+    float: right;
+    width: 350px;
+    text-align: right;
+    padding: 22px 0px 0px;
+}
+#header_menu a {
+    color: #EE6700;
+    text-decoration: none;
+    font-weight: bold;
+}
+#header_menu a:hover {
+    color: #E43700;
+    text-decoration: underline;
+}
+#header_menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: url(none) none;
+}
+#header_menu li {
+    margin: 0px;
+    padding: 0px 8px 0px 14px;
+    list-style: url(none) none;
+    float: right;
+    display: block;
+    background-image: url(../img/ph_list1.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 2px;
+    font-size: 11px;
+}
+#footer {
+    font-size: 10px;
+    color: #E86600;
+    text-align: right;
+    padding: 5px;
+    width: 690px;
+    border-top: 1px solid #FFCC00;
+    margin-top: 5px;
+}
+
+
+/* shindan styles
+----------------------------------------------*/
+#shindan_setsumei {
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding: 0px 10px 0px 17px;
+    color: #323232;
+    margin-top: 15px;
+    font-size: 12px;
+}
+#setsumonbox {
+    width: 690px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+#setsumonbox table {
+    border-collapse: collapse;
+    border: 1px solid #FFC567;
+}
+#setsumonbox td {
+    padding: 6px 3px;
+    border-bottom: 1px solid #F9DFA9;
+}
+#setsumonbox td.yes {
+    background-color: #FFF1FD;
+    text-align: center;
+    border-left: 1px dotted #FFC567;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#setsumonbox td.yes2 {
+    background-color: #FFF1E6;
+    text-align: center;
+    border-left: 1px dotted #FFC567;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#setsumonbox td.no {
+    background-color: #F1F9FF;
+    text-align: center;
+    border-left: 1px dotted #FFC567;
+    border-right: 1px dotted #FFC567;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#setsumonbox td.no2 {
+    background-color: #F1F9F3;
+    text-align: center;
+    border-left: 1px dotted #FFC567;
+    border-right: 1px dotted #FFC567;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#setsumonbox td.sonota {
+    border-left: 1px dotted #FFC567;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#setsumonbox tr.color {
+    background-color: #FFFFF5;
+}
+#soushin {
+    width: 700px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#soushin1 {
+    width: 700px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* kekka styles
+----------------------------------------------*/
+#point {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FF0E08;
+    padding-top: 20px;
+}
+#point_setsumei {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    color: #505050;
+}
+#graphType dl {
+    margin: 10px 0px;
+    color: #505050;
+}
+#graphType dl dt {
+    color: #333333;
+    font-weight: bold;
+    font-size: 109%;
+}
+#graphType dl dd {
+    margin: 0px 10px;
+}
+.kekka_midashi {
+    width: 700px;
+    padding-top: 20px;
+}
+.kekka_wakuox {
+    width: 690px;
+    border-bottom: 1px solid #F7B525;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #FFFFF5;
+}
+#type {
+    font-size: 17px;
+    font-weight: bold;
+    color: #F04D00;
+    padding: 5px;
+}
+#type_setsumei {
+    margin: 0px;
+    padding: 0px 5px 5px;
+    line-height: 19px;
+}
+.shin{
+    background-image: url(../img/ph_list2.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding: 0px 10px 0px 17px;
+    color: #323232;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.kekka_wakuox ul {
+    margin: 0px;
+    list-style: url(none) none;
+    padding: 5px 0px 15px 7px;
+}
+.kekka_wakuox li {
+    background-image: url(../img/ph_list3.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    display: block;
+    margin: 0px;
+    padding: 0px 0px 2px 13px;
+    color: #323232;
+}
+.graph_midashi {
+    background-image: url(../img/ph_list2.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #323232;
+    margin-left: 5px;
+}
+.graph_waku {
+    border: 2px dotted #F5A51C;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.graph_waku table {
+    width: 652px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+}
+.graph_waku td {
+    background-image: url(../img/ph_graphback1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: 1px solid #FFFFFF;
+    width: 20px;
+    border-collapse: collapse;
+    vertical-align: bottom;
+}
+.graph_waku td.center {
+    background-image: url(../img/ph_graphback2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.graph_waku td.side {
+    background-image: none;
+    width: 2px;
+}
+.graph_suuchi {
+    padding: 3px 7px 20px;
+}
+.graph_suuchi_lef {
+    float: left;
+    width: 238px;
+}
+.graph_suuchi_center {
+    text-align: center;
+    float: left;
+    width: 200px;
+}
+.graph_suuchi_rig {
+    float: left;
+    width: 238px;
+    text-align: right;
+}
+#kekka_last {
+    color: #505050;
+    padding: 15px 20px 20px 20px;
+}
+.button{
+    background: url(../img/btn.gif) no-repeat;
+    cursor:pointer;
+    border: none;
+    width: 142px;
+    height: 31px;
+}
+.button:hover{
+    background: url(../img/btn_mouseover.gif) no-repeat;
+    cursor:pointer;
+}
+
+
+#myChart{
+    display: none;
+    padding-bottom: 20px;
+}
+
